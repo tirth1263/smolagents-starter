@@ -101,15 +101,15 @@ Type `exit`, `quit`, or press `Ctrl+C` to leave the CLI.
 
 ```text
 .
-├── main.py                 # Interactive smolagents CLI
-├── requirements.txt        # Runtime dependencies
-├── pyproject.toml          # Project metadata
-├── .env.example            # Safe environment template
-├── site/                   # Deployment-ready static website
-│   ├── index.html
-│   ├── styles.css
-│   └── assets/
-└── .github/workflows/ci.yml
++-- main.py                 # Interactive smolagents CLI
++-- requirements.txt        # Runtime dependencies
++-- pyproject.toml          # Project metadata
++-- .env.example            # Safe environment template
++-- site/                   # Deployment-ready static website
+|   +-- index.html
+|   +-- styles.css
+|   +-- assets/
++-- .github/workflows/ci.yml
 ```
 
 ## Configuration
