@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A minimal Hugging Face smolagents starter for a web-search CodeAgent powered by Nebius Token Factory."
+    />
+    <title>smolagents Starter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top">smolagents Starter</a>
+      <nav>
+        <a href="#quickstart">Quickstart</a>
+        <a href="#architecture">Architecture</a>
+        <a href="https://github.com/tirth1263/smolagents-starter">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">CodeAgent + DuckDuckGo + Nebius Token Factory</p>
+          <h1 id="hero-title">smolagents Starter</h1>
+          <p class="hero-copy">
+            A compact Python starter for building web-search agents that think
+            in code, call real tools, and run through an interactive CLI.
+          </p>
+          <div class="hero-actions" aria-label="Project actions">
+            <a class="button primary" href="https://github.com/tirth1263/smolagents-starter">
+              View Repository
+            </a>
+            <a class="button secondary" href="#quickstart">Start Building</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div class="section-inner intro-grid">
+          <article>
+            <h2>Small enough to understand. Real enough to extend.</h2>
+            <p>
+              This starter keeps the agent loop visible: load a Nebius API key,
+              connect an OpenAI-compatible model, attach web search, and start
+              asking questions. It is designed for fast experiments, clean demos,
+              and practical agent prototypes.
+            </p>
+          </article>
+          <div class="stat-grid" aria-label="Project facts">
+            <div class="stat">
+              <span>Agent</span>
+              <strong>CodeAgent</strong>
+            </div>
+            <div class="stat">
+              <span>Model</span>
+              <strong>Qwen3</strong>
+            </div>
+            <div class="stat">
+              <span>Tool</span>
+              <strong>Web Search</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="quickstart" class="section light">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Quickstart</p>
+            <h2>Run the agent from your terminal.</h2>
+          </div>
+
+          <div class="code-grid">
+            <div class="code-panel">
+              <h3>Install</h3>
+              <pre><code>git clone https://github.com/tirth1263/smolagents-starter.git
+cd smolagents-starter
+pip install -r requirements.txt</code></pre>
+            </div>
+
+            <div class="code-panel">
+              <h3>Configure</h3>
+              <pre><code>cp .env.example .env
+# then set NEBIUS_API_KEY</code></pre>
+            </div>
+
+            <div class="code-panel">
+              <h3>Use</h3>
+              <pre><code>python main.py</code></pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="architecture" class="section">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Architecture</p>
+            <h2>The starter has one job: make the first useful agent obvious.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Code-first reasoning</h3>
+              <p>
+                `CodeAgent` can solve tasks by writing Python and using the
+                tools attached to it.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Fresh web context</h3>
+              <p>
+                `DuckDuckGoSearchTool` gives the agent a simple path to current
+                information for research prompts.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Hosted inference</h3>
+              <p>
+                `OpenAIServerModel` points at Nebius Token Factory through its
+                OpenAI-compatible API.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dark">
+        <div class="section-inner split">
+          <div>
+            <p class="eyebrow">Example prompts</p>
+            <h2>Ask questions that benefit from search.</h2>
+          </div>
+          <ul class="prompt-list">
+            <li>Who won the latest F1 race and by how many seconds?</li>
+            <li>Summarize today's top story on Hacker News.</li>
+            <li>Find three recent papers about agentic RAG.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Built with Hugging Face smolagents and Nebius Token Factory.</span>
+      <a href="https://github.com/tirth1263/smolagents-starter">GitHub repository</a>
+    </footer>
+  </body>
+</html>
