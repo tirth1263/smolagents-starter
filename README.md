@@ -4,7 +4,7 @@ A minimal, code-first starter for building web-search agents with
 [Hugging Face smolagents](https://github.com/huggingface/smolagents) and
 [Nebius Token Factory](https://studio.nebius.ai/).
 
-Live website: coming soon after deployment.
+Live website: [https://tirth1263.github.io/smolagents-starter/](https://tirth1263.github.io/smolagents-starter/)
 
 ## What This Project Does
 
